@@ -86,14 +86,13 @@ const compareCards = (e) => {
   } else {
     window.setTimeout(hideCard, 850);
     function hideCard() {
-      
       card1.style.display = "block";
       card2.style.display = "block";
-       
       return (card1 = card3);
     }
   }
 };
+
 const sectionArray = Array.from(section.children);
 
 sectionArray.forEach((e) => {
