@@ -2,7 +2,7 @@ const h1 = document.createElement("h1");
 h1.textContent = "Memory game";
 const section = document.createElement("section");
 const footer = document.createElement("footer");
-footer.classList.add("start")
+footer.classList.add("start");
 const creator = document.createElement("div");
 creator.textContent = "created by Luay Abbas";
 creator.classList.add("creator");
@@ -12,9 +12,9 @@ reStart.classList.add("restart");
 const startMeassge = document.createElement("div");
 const mistakes = document.createElement("div");
 mistakes.classList.add("mistakes");
-let num=0;
-mistakes.innerHTML= `Number of mistakes : ${num}` ;
-footer.append(creator, reStart, startMeassge,mistakes);
+let num = 0;
+mistakes.innerHTML = `Number of mistakes : ${num}`;
+footer.append(creator, reStart, startMeassge, mistakes);
 document.body.append(h1, section, footer);
 
 for (i = 0; i < 20; i++) {
@@ -35,8 +35,8 @@ for (i = 0; i < 20; i++) {
   function hideCards() {
     back.style = `
   transform: scale(1)`;
-  startMeassge.textContent="";
-  reStart.style.display="block"
+    startMeassge.textContent = "";
+    reStart.style.display = "block";
   }
   cardDiv.addEventListener("click", () => {
     back.style.display = "none";
@@ -57,7 +57,8 @@ let photoSrcArray = [];
       photoSrcArray.push(chosenNum);
     }
   }
-  startMeassge.textContent="Take a look and wait until the photos be coverd befor you start to play";
+  startMeassge.textContent =
+    "Take a look and wait until the photos be coverd befor you start to play";
 })();
 
 for (i = 0; i < photoSrcArray.length; i++) {
@@ -74,7 +75,6 @@ let card3;
 
 const compareCards = (e) => {
   let clickCard = e.target;
-  
 
   console.log(card1);
   if (clickCard !== card1) {
@@ -93,15 +93,14 @@ const compareCards = (e) => {
 
     return (card1 = card3);
   } else {
-    num++
-    mistakes.innerHTML= `your mistakes : ${num}`
+    num++;
+    mistakes.innerHTML = `Number of mistakes : ${num}`;
     window.setTimeout(hideCard, 850);
     function hideCard() {
-      
       card1.style.display = "block";
       card2.style.display = "block";
-       (card1 = card3);
-    } 
+      card1 = card3;
+    }
   }
 };
 
