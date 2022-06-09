@@ -40,6 +40,9 @@ for (i = 0; i < 20; i++) {
   transform: scale(1)`;
     startMeassge.textContent = "";
     reStart.style.display = "block";
+    mistakes.style.display = "block";
+    numOfMistakes.style.display = "block";
+    
   }
   cardDiv.addEventListener("click", () => {
     back.style.display = "none";
