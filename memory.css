@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(231, 239, 250);
+ 
+}
+section {
+  display: grid;
+  grid-template-columns: 13% 13% 13% 13% 13%;
+  justify-content: center;
+  row-gap: 0.5rem;
+  margin-bottom: 1.5%;
+}
+h1 {
+  font-size: 2.2vw;
+  text-align: center;
+  color: rgb(255, 132, 0);
+  animation: shick 2s 2s  alternate ,shick 2s 10s  alternate , shick 2s 20s  alternate,
+  shick 2s 30s  alternate,shick 2s 40s  alternate , shick 2s 55s  alternate;
+  font-family: 'Dancing Script', cursive;
+}
+@keyframes shick {
+  from{
+    transform: rotateY(360deg);
+  }
+
+}
+.main {
+  align-self: center;
+  position: relative;
+  width: 9vw;
+  height: 16vh;
+  margin: .5rem auto;
+ 
+}
+.face,
+.back {
+  position: absolute;
+}
+img {
+  width: 100%;
+  height: 18vh;
+  border-radius:2rem ;
+}
+.back {
+  width: 100%;
+  height: 18vh;
+  background-color:#42a3f2;
+  border-radius: 2rem;
+  transform: scaleX(0);
+  transition: 1s;
+  color: transparent;
+}
+footer{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center; 
+  width: 50%;
+  margin: auto;
+  border-radius: 2rem;
+  height: 10vh;
+  background-color: rgb(244, 175, 47);
+  
+}
+.creator{
+  position: absolute;
+  bottom: 3%;
+  left: 2%;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: rgb(251, 252, 255);
+  font-family: 'Dancing Script', cursive;
+}
+.restart{
+ 
+  font-size: 1.2vw;
+  font-weight: bold;
+  bottom: 3%;
+  right: 2%;
+  color: rgb(4, 2, 92);
+  font-family: 'Dancing Script', cursive;
+  cursor: pointer;
+  animation: scale 2s infinite alternate ;
+}
+@keyframes scale {
+  to{
+    transform: scale(1.3);
+  }
+}
