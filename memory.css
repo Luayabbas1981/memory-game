@@ -62,7 +62,7 @@ footer{
   align-items: center; 
   font-size: 1.4vw;
   font-weight: bold;
-  color:  #ea574f;
+  color: #ab47bc;
   font-family: 'Lobster', cursive;
   width: 50%;
   margin: auto;
@@ -85,7 +85,7 @@ footer{
   top: 15%;
   font-size: 1.1vw;
   font-weight: bold;
-  color: #ea574f;
+  color: #ab47bc;
   font-family: 'Lobster', cursive;
   cursor: pointer;
   animation: scale 2s infinite alternate ;
