@@ -13,8 +13,11 @@ const startMeassge = document.createElement("div");
 const mistakes = document.createElement("div");
 mistakes.classList.add("mistakes");
 let num = 0;
-mistakes.innerHTML = `Number of mistakes : ${num}`;
-footer.append(creator, reStart, startMeassge, mistakes);
+const numOfMistakes = document.createElement("div");
+numOfMistakes.classList.add("mistakesnum");
+numOfMistakes.innerHTML= num
+mistakes.innerHTML = `Number of mistakes : `;
+footer.append(creator, reStart, startMeassge, mistakes,numOfMistakes);
 document.body.append(h1, section, footer);
 
 for (i = 0; i < 20; i++) {
@@ -94,7 +97,7 @@ const compareCards = (e) => {
     return (card1 = card3);
   } else {
     num++;
-    mistakes.innerHTML = `Number of mistakes : ${num}`;
+    numOfMistakes.innerHTML = num;
     window.setTimeout(hideCard, 850);
     function hideCard() {
       card1.style.display = "block";

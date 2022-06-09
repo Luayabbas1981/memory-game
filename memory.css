@@ -85,7 +85,7 @@ footer{
   top: 15%;
   font-size: 1.1vw;
   font-weight: bold;
-  color:  #5a6dd8;
+  color: #e91e63;
   font-family: 'Lobster', cursive;
   cursor: pointer;
   animation: scale 2s infinite alternate ;
@@ -101,5 +101,13 @@ footer{
   font-size: 1.1vw;
   bottom: 8%;
   color:#3f51b5;
+  font-family: 'Lobster', cursive;
+}
+.mistakesnum{
+  position: absolute;
+  font-size: 1.2vw;
+  bottom: 6%;
+  left: 60%;
+  color: #f57c00;
   font-family: 'Lobster', cursive;
 }
