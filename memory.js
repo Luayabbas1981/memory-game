@@ -15,9 +15,9 @@ mistakes.classList.add("mistakes");
 let num = 0;
 const numOfMistakes = document.createElement("div");
 numOfMistakes.classList.add("mistakesnum");
-numOfMistakes.innerHTML= num
+numOfMistakes.innerHTML = num;
 mistakes.innerHTML = `Number of mistakes : `;
-footer.append(creator, reStart, startMeassge, mistakes,numOfMistakes);
+footer.append(creator, reStart, startMeassge, mistakes, numOfMistakes);
 document.body.append(h1, section, footer);
 
 for (i = 0; i < 20; i++) {
@@ -42,7 +42,6 @@ for (i = 0; i < 20; i++) {
     reStart.style.display = "block";
     mistakes.style.display = "block";
     numOfMistakes.style.display = "block";
-    
   }
   cardDiv.addEventListener("click", () => {
     back.style.display = "none";
@@ -77,7 +76,6 @@ for (i = 0; i < photoSrcArray.length; i++) {
 
 let card1;
 let card2;
-let card3;
 
 const compareCards = (e) => {
   let clickCard = e.target;
@@ -97,7 +95,7 @@ const compareCards = (e) => {
   ) {
     card2.style.display = "none";
 
-    return (card1 = card3);
+    return (card1 = !card1);
   } else {
     num++;
     numOfMistakes.innerHTML = num;
@@ -105,7 +103,7 @@ const compareCards = (e) => {
     function hideCard() {
       card1.style.display = "block";
       card2.style.display = "block";
-      card1 = card3;
+      card1 = !card1;
     }
   }
 };
