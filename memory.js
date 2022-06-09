@@ -10,7 +10,7 @@ reStart.textContent = "Click here to restart the game";
 reStart.classList.add("restart");
 const mistake = document.createElement("div");
 mistake.classList.add("mistake");
-footer.append(creator,reStart,mistake);
+footer.append(creator, reStart, mistake);
 document.body.append(h1, section, footer);
 
 for (i = 0; i < 20; i++) {
@@ -81,7 +81,7 @@ const compareCards = (e) => {
     parseInt(card1.textContent) - 10 == parseInt(card2.textContent)
   ) {
     card2.style.display = "none";
-    
+
     return (card1 = card3);
   } else {
     window.setTimeout(hideCard, 850);
@@ -99,6 +99,4 @@ sectionArray.forEach((e) => {
   e.children[1].addEventListener("click", compareCards);
 });
 
-
-reStart.addEventListener("click",()=> window.location.reload(true));
-
+reStart.addEventListener("click", () => window.location.reload(true));
