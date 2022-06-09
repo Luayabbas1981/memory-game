@@ -10,7 +10,11 @@ const reStart = document.createElement("div");
 reStart.textContent = "Click here to restart the game";
 reStart.classList.add("restart");
 const startMeassge = document.createElement("div");
-footer.append(creator, reStart, startMeassge);
+const mistakes = document.createElement("div");
+mistakes.classList.add("mistakes");
+let num=0;
+mistakes.innerHTML= `Number of mistakes : ${num}` ;
+footer.append(creator, reStart, startMeassge,mistakes);
 document.body.append(h1, section, footer);
 
 for (i = 0; i < 20; i++) {
@@ -53,7 +57,7 @@ let photoSrcArray = [];
       photoSrcArray.push(chosenNum);
     }
   }
-  startMeassge.textContent="Please wait until the photos be coverd befor you start to play";
+  startMeassge.textContent="Take a look and wait until the photos be coverd befor you start to play";
 })();
 
 for (i = 0; i < photoSrcArray.length; i++) {
@@ -67,6 +71,7 @@ for (i = 0; i < photoSrcArray.length; i++) {
 let card1;
 let card2;
 let card3;
+
 const compareCards = (e) => {
   let clickCard = e.target;
   
@@ -88,12 +93,15 @@ const compareCards = (e) => {
 
     return (card1 = card3);
   } else {
+    num++
+    mistakes.innerHTML= `your mistakes : ${num}`
     window.setTimeout(hideCard, 850);
     function hideCard() {
+      
       card1.style.display = "block";
       card2.style.display = "block";
-      return (card1 = card3);
-    }
+       (card1 = card3);
+    } 
   }
 };
 
