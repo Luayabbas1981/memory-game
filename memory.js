@@ -61,7 +61,7 @@ let photoSrcArray = [];
     }
   }
   startMeassge.textContent =
-    "Take a look and wait until the photos be coverd befor you start to play";
+    "Take a look and wait until the photos be covered befor you start to play";
 })();
 
 for (i = 0; i < photoSrcArray.length; i++) {
