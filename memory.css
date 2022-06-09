@@ -59,6 +59,10 @@ footer{
   position: relative;
   justify-content: center;
   align-items: center; 
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: rgb(53, 9, 199);
+  font-family:  cursive;
   width: 50%;
   margin: auto;
   border-radius: 2rem;
@@ -70,7 +74,7 @@ footer{
   position: absolute;
   bottom: 3%;
   left: 2%;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-weight: bold;
   color: rgb(251, 252, 255);
   font-family: 'Dancing Script', cursive;
@@ -81,10 +85,11 @@ footer{
   font-weight: bold;
   bottom: 3%;
   right: 2%;
-  color: rgb(4, 2, 92);
+  color:  rgb(53, 9, 199);
   font-family: 'Dancing Script', cursive;
   cursor: pointer;
   animation: scale 2s infinite alternate ;
+  display: none;
 }
 @keyframes scale {
   to{

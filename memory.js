@@ -2,15 +2,15 @@ const h1 = document.createElement("h1");
 h1.textContent = "Memory game";
 const section = document.createElement("section");
 const footer = document.createElement("footer");
+footer.classList.add("start")
 const creator = document.createElement("div");
 creator.textContent = "created by Luay Abbas";
 creator.classList.add("creator");
 const reStart = document.createElement("div");
 reStart.textContent = "Click here to restart the game";
 reStart.classList.add("restart");
-const mistake = document.createElement("div");
-mistake.classList.add("mistake");
-footer.append(creator, reStart, mistake);
+const startMeassge = document.createElement("div");
+footer.append(creator, reStart, startMeassge);
 document.body.append(h1, section, footer);
 
 for (i = 0; i < 20; i++) {
@@ -31,6 +31,8 @@ for (i = 0; i < 20; i++) {
   function hideCards() {
     back.style = `
   transform: scale(1)`;
+  startMeassge.textContent="";
+  reStart.style.display="block"
   }
   cardDiv.addEventListener("click", () => {
     back.style.display = "none";
@@ -51,6 +53,7 @@ let photoSrcArray = [];
       photoSrcArray.push(chosenNum);
     }
   }
+  startMeassge.textContent="Please wait until the photos be coverd befor you start to play";
 })();
 
 for (i = 0; i < photoSrcArray.length; i++) {
@@ -66,6 +69,7 @@ let card2;
 let card3;
 const compareCards = (e) => {
   let clickCard = e.target;
+  footer.textContent=""
 
   console.log(card1);
   if (clickCard !== card1) {
