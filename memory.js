@@ -102,7 +102,4 @@ sectionArray.forEach((e) => {
 
 
 reStart.addEventListener("click",()=> window.location.reload(true));
-reStart.addEventListener("click",()=> {
-  const audio = new Audio('./sounds/good.mp3');
-  audio.play()
-})
+
