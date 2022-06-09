@@ -60,15 +60,15 @@ footer{
   position: relative;
   justify-content: center;
   align-items: center; 
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   font-weight: bold;
-  color: #3f51b5;
-  font-family:  cursive;
+  color:  #ea574f;
+  font-family: 'Lobster', cursive;
   width: 50%;
   margin: auto;
   border-radius: 2rem;
   height: 10vh;
-  background-color: #9fbac7;
+  background-color: #a1bfcd;
   
 }
 .creator{
@@ -85,7 +85,7 @@ footer{
   top: 15%;
   font-size: 1.1vw;
   font-weight: bold;
-  color: #e91e63;
+  color: #ea574f;
   font-family: 'Lobster', cursive;
   cursor: pointer;
   animation: scale 2s infinite alternate ;
@@ -105,8 +105,8 @@ footer{
 }
 .mistakesnum{
   position: absolute;
-  font-size: 1.2vw;
-  bottom: 6%;
+  font-size: 1.5vw;
+  bottom: 3%;
   left: 60%;
   color: #f57c00;
   font-family: 'Lobster', cursive;
