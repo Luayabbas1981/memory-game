@@ -99,7 +99,7 @@ footer{
 .mistakes{
   position: absolute;
   font-size: 1.1vw;
-  bottom: 8%;
+  bottom: 13%;
   color:#3f51b5;
   font-family: 'Lobster', cursive;
   display: none;
@@ -107,7 +107,7 @@ footer{
 .mistakesnum{
   position: absolute;
   font-size: 1.5vw;
-  bottom: 3%;
+  bottom: 5%;
   left: 60%;
   color: #f57c00;
   font-family: 'Lobster', cursive;
