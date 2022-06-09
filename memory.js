@@ -69,7 +69,7 @@ let card2;
 let card3;
 const compareCards = (e) => {
   let clickCard = e.target;
-  footer.textContent=""
+  
 
   console.log(card1);
   if (clickCard !== card1) {
