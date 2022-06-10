@@ -96,10 +96,12 @@ const compareCards = (e) => {
   ) {
     num1++;
     num1 == 10
-      ? (h1.textContent = `Super ! you won with just ${num} mistakes`)
+      ? (h1.textContent = `Super you won with just ${num} mistakes`)
       : (h1.textContent = "Memory game");
-      num= 0 && num1 == 10
-      ? (h1.textContent = `WoW!!! you won without mistakes`)
+    num1 == 10 ? h1.classList.add("won") : "";
+
+    num1 == 10 && num == 0
+      ? (h1.textContent = `WOW! you won without any mistakes`)
       : (h1.textContent = "Memory game");
     num1 == 10 ? h1.classList.add("won") : "";
     card2.style.display = "none";
