@@ -5,7 +5,6 @@ body {
   height: 100vh;
   overflow: hidden;
   background-color: rgb(210, 225, 246);
- 
 }
 section {
   display: grid;
@@ -18,24 +17,22 @@ h1 {
   font-size: 2vw;
   text-align: center;
   color: rgb(255, 132, 0);
-  animation: shick 2s 2s  alternate ,shick 2s 10s  alternate , shick 2s 20s  alternate,
-  shick 2s 30s  alternate,shick 2s 40s  alternate , shick 2s 55s  alternate;
-  font-family: 'Lobster', cursive;
- 
+  animation: shick 2s 2s alternate, shick 2s 10s alternate,
+    shick 2s 20s alternate, shick 2s 30s alternate, shick 2s 40s alternate,
+    shick 2s 55s alternate;
+  font-family: "Lobster", cursive;
 }
 @keyframes shick {
-  from{
+  from {
     transform: rotateY(360deg);
   }
-
 }
 .main {
   align-self: center;
   position: relative;
   width: 9vw;
   height: 16vh;
-  margin: .5rem auto;
- 
+  margin: 0.5rem auto;
 }
 .face,
 .back {
@@ -44,91 +41,95 @@ h1 {
 img {
   width: 100%;
   height: 18vh;
-  border-radius:2rem ;
+  border-radius: 2rem;
 }
 .back {
   width: 100%;
   height: 18vh;
-  background-color:#42a3f2;
+  background-color: #42a3f2;
   border-radius: 2rem;
   transform: scaleX(0);
   transition: 1s;
   color: transparent;
 }
-footer{
+footer {
   display: flex;
   position: relative;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   font-size: 1.4vw;
   font-weight: bold;
   color: #ab47bc;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   width: 50%;
   margin: auto;
   border-radius: 2rem;
   height: 10vh;
   background-color: #b9d1dc;
-  
 }
-.creator{
+.creator {
   position: absolute;
   bottom: 2%;
   left: -45%;
   font-size: 1.2vw;
   font-weight: bold;
-  color:  #3f51b5;
-  font-family: 'Lobster', cursive;
+  color: #3f51b5;
+  font-family: "Lobster", cursive;
 }
-.restart{
+.restart {
   position: absolute;
   top: 15%;
   font-size: 1.1vw;
   font-weight: bold;
   color: #ab47bc;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   cursor: pointer;
-  animation: scale 2s infinite alternate ;
+  animation: scale 2s infinite alternate;
   display: none;
 }
 @keyframes scale {
-  to{
+  to {
     transform: scale(1.1);
   }
 }
-.mistakes{
+.mistakes {
   position: absolute;
   font-size: 1.1vw;
   bottom: 13%;
-  color:#3f51b5;
-  font-family: 'Lobster', cursive;
+  color: #3f51b5;
+  font-family: "Lobster", cursive;
   display: none;
 }
-.mistakesnum{
+.mistakesnum {
   position: absolute;
   font-size: 1.5vw;
   bottom: 5%;
   left: 60%;
   color: #f57c00;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   display: none;
 }
 .won {
-  font-size:2.1vw ;
+  font-size: 1.8vw;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
- background-image:  linear-gradient(90deg, rgba(0,199,236,1) 0%, rgba(247,29,253,1) 21%, rgba(255,154,0,1) 70%, rgba(247,237,9,1) 100%);
-   background-size: 200%;
-   animation: move 1s infinite alternate;
-  
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 199, 236, 1) 0%,
+    rgba(247, 29, 253, 1) 21%,
+    rgba(255, 154, 0, 1) 86%,
+    rgba(247, 237, 9, 1) 100%
+  );
+  background-size: 200%;
+  animation: move 1s infinite alternate;
 }
 @keyframes move {
-  from{
-    background-position-x:0 ;
+  from {
+    background-position-x: 0;
   }
   to {
-   background-position-x:100% ;
-   transform: scale(1.1);
+    background-position-x: 100%;
+    transform: scale(1.1);
   }
 }
