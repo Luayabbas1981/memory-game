@@ -1,3 +1,4 @@
+let num1 = 0;
 const h1 = document.createElement("h1");
 h1.textContent = "Memory game";
 const section = document.createElement("section");
@@ -93,8 +94,11 @@ const compareCards = (e) => {
     parseInt(card1.textContent) + 10 == parseInt(card2.textContent) ||
     parseInt(card1.textContent) - 10 == parseInt(card2.textContent)
   ) {
+    num1++;
+    num1 == 10
+      ? (h1.textContent = "Super you won")
+      : (h1.textContent = "Memory game");
     card2.style.display = "none";
-
     return (card1 = !card1);
   } else {
     num++;
