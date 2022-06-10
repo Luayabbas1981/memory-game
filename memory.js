@@ -34,7 +34,7 @@ for (i = 0; i < 20; i++) {
   back.classList.add("back");
   back.id = `back${i + 1}`;
   cardDiv.append(face, back);
-  window.setTimeout(hideCards, 4000);
+  window.setTimeout(hideCards, 4500);
   function hideCards() {
     back.style = `
   transform: scale(1)`;
