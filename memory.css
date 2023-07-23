@@ -134,7 +134,7 @@ footer {
 @media (max-width: 767px) {
   h1 {
     font-size: 1.3rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
   section {
     grid-template-columns: repeat(5, calc(95% / 5));
