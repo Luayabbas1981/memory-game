@@ -4,13 +4,13 @@ body {
   user-select: none;
   height: 100vh;
   overflow: hidden;
-  background-color: rgb(210, 225, 246);
+  background-color: #3F51B5;
 }
 section {
   display: grid;
   grid-template-columns: 13% 13% 13% 13% 13%;
   justify-content: center;
-  row-gap: 0.5rem;
+  row-gap: 1rem;
   margin-bottom: 1.5%;
 }
 
@@ -67,7 +67,7 @@ footer {
   color: #ab47bc;
   font-family: "Lobster", cursive;
   width: 50%;
-  margin: auto;
+  margin: 2rem auto;
   border-radius: 2rem;
   height: 10vh;
   background-color: #b9d1dc;
