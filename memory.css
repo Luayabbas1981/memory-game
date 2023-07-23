@@ -45,13 +45,13 @@ h1 {
 img {
   width: 100%;
   height: 18vh;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 .back {
   width: 100%;
   height: 18vh;
   background-color: #72aad8;
-  border-radius: 2rem;
+  border-radius: 1rem;
   transition: 1s;
   color: transparent;
   transform: scaleX(0);
