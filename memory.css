@@ -40,7 +40,7 @@ h1 {
 .back {
   position: absolute;
   cursor: pointer;
-
+  height: 14vh;
 }
 img {
   width: 100%;
