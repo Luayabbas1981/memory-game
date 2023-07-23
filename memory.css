@@ -13,6 +13,7 @@ section {
   row-gap: 0.5rem;
   margin-bottom: 1.5%;
 }
+
 h1 {
   font-size: 2vw;
   text-align: center;
@@ -34,9 +35,12 @@ h1 {
   height: 16vh;
   margin: 0.5rem auto;
 }
+
 .face,
 .back {
   position: absolute;
+  cursor: pointer;
+
 }
 img {
   width: 100%;
@@ -48,16 +52,17 @@ img {
   height: 18vh;
   background-color: #72aad8;
   border-radius: 2rem;
-  transform: scaleX(0);
   transition: 1s;
   color: transparent;
+  transform: scaleX(0);
 }
+
 footer {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  font-size: 1.4vw;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #ab47bc;
   font-family: "Lobster", cursive;
@@ -111,9 +116,10 @@ footer {
 }
 .won {
   font-size: 1.6vw;
-  background-clip: text;
+  
   -webkit-background-clip: text;
   color: transparent;
+  animation: move 1s infinite alternate;
   background-image: linear-gradient(
     90deg,
     rgba(0, 199, 236, 1) 0%,
@@ -121,7 +127,37 @@ footer {
     rgba(247, 237, 9, 1) 100%
   );
   background-size: 200%;
-  animation: move 1s infinite alternate;
+ 
+}
+@media(max-width:767px){
+  h1{
+    font-size: 1.3rem;
+  }
+  section{
+    grid-template-columns: repeat(5,calc(95% /5)) ;
+  }
+  .main{
+    width: 17vw;
+  }
+  .face,
+.back , img{
+  border-radius: 0.7rem;
+}
+footer{
+  margin-top: 1rem;
+  border-radius: 1rem;
+  font-size: 0.5rem;
+  text-align: center;
+}
+.creator{
+  display: none;
+}
+.restart{
+  font-size: 0.7rem;
+}
+.mistakes{
+  font-size: 0.7rem;
+}
 }
 @keyframes move {
   from {

@@ -11,14 +11,12 @@ const reStart = document.createElement("div");
 reStart.textContent = "Click here to restart the game";
 reStart.classList.add("restart");
 const startMeassge = document.createElement("div");
-const mistakes = document.createElement("div");
+const mistakes = document.createElement("span");
 mistakes.classList.add("mistakes");
 let num = 0;
-const numOfMistakes = document.createElement("div");
-numOfMistakes.classList.add("mistakesnum");
-numOfMistakes.innerHTML = num;
-mistakes.innerHTML = `Number of mistakes : `;
-footer.append(creator, reStart, startMeassge, mistakes, numOfMistakes);
+mistakes.innerHTML = `Number of mistakes : <span style="color: red;">${num}</span>`;
+footer.append(creator, reStart, startMeassge, mistakes);
+
 document.body.append(h1, section, footer);
 
 for (i = 0; i < 20; i++) {
@@ -42,7 +40,6 @@ for (i = 0; i < 20; i++) {
     startMeassge.textContent = "";
     reStart.style.display = "block";
     mistakes.style.display = "block";
-    numOfMistakes.style.display = "block";
   }
   cardDiv.addEventListener("click", () => {
     back.style.display = "none";
@@ -81,7 +78,6 @@ let card2;
 const compareCards = (e) => {
   let clickCard = e.target;
 
-  console.log(card1);
   if (clickCard !== card1) {
     if (!card1) {
       return (card1 = clickCard);
@@ -95,7 +91,6 @@ const compareCards = (e) => {
     parseInt(card1.textContent) - 10 == parseInt(card2.textContent)
   ) {
     num1++;
-   
     num1 == 10 ? h1.classList.add("won") : "";
     num1 == 10
       ? (h1.textContent = `Super you won with just ${num} mistakes`)
@@ -108,7 +103,7 @@ const compareCards = (e) => {
     return (card1 = !card1);
   } else {
     num++;
-    numOfMistakes.innerHTML = num;
+    mistakes.innerHTML = `Number of mistakes : <span style="color: red;">${num}</span>`;
     window.setTimeout(hideCard, 850);
     function hideCard() {
       card1.style.display = "block";
@@ -125,3 +120,4 @@ sectionArray.forEach((e) => {
 });
 
 reStart.addEventListener("click", () => window.location.reload(true));
+console.log(num)
