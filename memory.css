@@ -153,8 +153,9 @@ footer {
   }
 
   footer {
+    width: 90%;
     border-radius: 1rem;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     text-align: center;
     margin: 1rem auto;
   }
@@ -162,10 +163,10 @@ footer {
     display: none;
   }
   .restart {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   .mistakes {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 }
 @keyframes move {
